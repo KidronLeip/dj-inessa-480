@@ -28,11 +28,11 @@
             </ul>
             
             <a href="#contact" class="btn">Book Now</a>
-            <a onclick="showSidebar()" href="#" class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="var(--white)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            <a onclick="showSidebar()" class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="var(--white)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
 
             <!-- 900px and under -->
             <ul class="sidebar">
-                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="var(--white)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick="hideSidebar()"><a><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="var(--white)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#reviews">Reviews</a></li>
@@ -47,7 +47,7 @@
         <section class="hero">
             <div class="hero-overlay">
                 <h1>Your night.<br> Your soundtrack.</h1>
-                <p>Weddings • Parties • Corporate events. Professional, reliable, and fun.</p>
+                <p>Personalized music for your night: weddings, parties, and corporate events.</p>
                 <a href="#contact" class="btn">Get a Quote</a>
             </div>
         </section>
@@ -60,7 +60,7 @@
 
             <div class="about-wrap">
                 <div class="about-photo">
-                    <img src="images/inessa_photo.jpg">
+                    <img src="images/inessa_photo.jpg" alt="A headshot of DJ Inessa Leip.">
                 </div>
 
                 <div class="about-text">
@@ -69,9 +69,9 @@
                         Whether it’s a wedding, corporate event, or private party, I work closely with you to personalize the soundtrack, make your vision a reality and deliver an unforgettable experience.</p>
 
                     <ul class="about-social">
-                        <li><a href="https://www.instagram.com/inessa.leip/"><img src="icons/instagram-icon.svg"></a></li>
-                        <li><a href="https://www.facebook.com/inessa.leip/"><img src="icons/facebook-icon.svg"></a></li>
-                        <li><a href="#"><img src="icons/tiktok-icon.svg"></a></li>
+                        <li><a href="https://www.instagram.com/inessa.leip/"><img src="icons/instagram-icon.svg" alt="Instagram"></a></li>
+                        <li><a href="https://www.facebook.com/inessa.leip/"><img src="icons/facebook-icon.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="icons/tiktok-icon.svg" alt="TikTok"></a></li>
                     </ul>
                 </div>
             </div>
@@ -90,10 +90,8 @@
                 <button type="button" id="service-keytar-btn" class="service-tab">Keytar Add-On</button>
             </div>
 
-            <article class="service panel service-display">
-                <img id="service-img" class="service-img"
-                    src="images/dj_set.jpeg"
-                    alt="DJ Inessa mixing at a packed dance floor.">
+            <article class="service panel service-display" aria-label="article">
+                <img id="service-img" class="service-img" src="images/dj_set.jpeg" alt="DJ working the mixer board at a party.">
 
                 <h3 id="service-name">DJ Set</h3>
                 <p id="service-description">Book a full DJ set featuring seamless transitions, live mixing, and a playlist built around your crowd. Perfect for weddings, parties, and special events that need a strong musical centerpiece.</p>
@@ -114,13 +112,13 @@
             </p>
 
             <div class="reviews-grid">
-                <article class="panel review-card">
+                <article class="panel review-card" aria-label="article">
                     <blockquote>"Inessa was the perfect choice for our mixed-culture party! She effortlessly blended Russian and American music, keeping the energy high and the dance floor packed all night. Her song selection was spot on for our age group,
                         seamlessly mixing 80s classics with modern favorites. Beyond her incredible talent, she was professional, attentive, and a true pleasure to work with. And to top it off, she’s absolutely stunning!
                         If you’re looking for a DJ who understands diverse musical tastes and knows how to create an unforgettable atmosphere, Inessa is the one to book!"</blockquote>
                     <p class="review-name">- KATE AND STEVE K.</p>
                 </article>
-                <article class="panel review-card">
+                <article class="panel review-card" aria-label="article">
                     <blockquote>"Five stars all the way for DJ Inessa and the AZBestDJ.com team. We recently hosted a quinceañera for our daughter, and DJ Inessa absolutely delivered. From the first song to the last dance, she had the teens engaged. 
                         We were especially happy to find a DJ company that offered a fantastic female DJ. My daughter and her friends connected with Inessa right away, and you could tell they felt comfortable and energized by her presence.
                         She understood the vibe, kept things flowing, and played a perfect mix of music.<br><br> We originally booked through DJ Daniel, who was professional, responsive, and explained that since Saturdays are in such high demand, he often assigns one of his trusted DJs.
@@ -129,15 +127,15 @@
                         The experience and results were outstanding from start to finish."</blockquote>
                     <p class="review-name">— M. PATEL</p>
                 </article>
-                <article class="panel review-card">
+                <article class="panel review-card" aria-label="article">
                     <blockquote>“We had the best time celebrating our 50th wedding anniversary. DJ Inessa made it so memorable for us. We had nothing but great responses from all our guests. Thank you from the bottom of our hearts!”</blockquote>
                     <p class="review-name">— MIKE AND KAREN</p>
                 </article>
-                <article class="panel review-card">
+                <article class="panel review-card" aria-label="article">
                     <blockquote>“Inessa is amazing! She provided such an amazing music experience for our ceremony and was on top of it from the moment she arrived. An incredible woman & DJ!”</blockquote>
                     <p class="review-name">— LIZ B.</p>
                 </article>
-                <article class="panel review-card">
+                <article class="panel review-card" aria-label="article">
                     <blockquote>“Beautiful work by Inessa. Excellent instrument, great music. I recommend Inessa as a DJ.”</blockquote>
                     <p class="review-name">— YULIA K.</p>
                 </article>
@@ -155,35 +153,43 @@
 
             <div class="gallery-grid">
                 <figure class="gallery-item">
-                    <img src="images/image1.jpg" alt="">
+                    <img src="images/gallery9.jpg" alt="">
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="images/image2.jpg" alt="">
+                    <img src="images/gallery10.jpg" alt="">
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="images/DJ dance party.avif" alt="">
+                    <img src="images/gallery1.avif" alt="">
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="images/DJ dancing old people.avif" alt="">
+                    <img src="images/gallery8.avif" alt="">
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="images/DJ tucson wed.avif" alt="">
+                    <img src="images/gallery3.png" alt="">
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="images/DJ happy couple barn ZEKE.avif" alt="">
+                    <img src="images/gallery6.avif" alt="">
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="images/Sedona Mountaintop cere.avif" alt="">
+                    <img src="images/gallery4.avif" alt="">
                 </figure>
 
                 <figure class="gallery-item">
-                    <img src="images/image3.jpg" alt="">
+                    <img src="images/gallery7.avif" alt="">
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery5.avif" alt="">
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery11.jpg" alt="">
                 </figure>
             </div>
         </section>
@@ -277,12 +283,12 @@
                     <ul>
                         <li>
                             <img class="contact-icon" src="icons/email-icon.png" alt="Email icon">
-                            <a href="mailto:djinessa@email.com">djinessa@email.com</a>
+                            <a href="mailto:djinessaphoenix@email.com">djinessaphoenix@email.com</a>
                         </li>
 
                         <li>
                         <img class="contact-icon" src="icons/phone-icon.png" alt="Phone icon">
-                        <a href="tel:1234567890">(123) 456-7890</a>
+                        <a href="tel:4805408594">(480) 540 - 8594</a>
                         </li>
 
                         <li>
