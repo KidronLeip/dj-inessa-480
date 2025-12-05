@@ -151,22 +151,29 @@ nav a {
   align-items: center;
 }
 
+/* No scrolling when sidebar menu is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 350px;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1.5rem;
   padding: 1.5rem;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 20, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar li {
@@ -215,9 +222,18 @@ nav a {
 
 /* Nav bar color change on scroll */
 .main-nav.scrolled {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 20, 0.2);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav.menu-open,
+.main-nav.menu-open.scrolled {
+  background-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
 }
 
 .nav-links {
@@ -352,6 +368,7 @@ nav a {
   opacity: 0.95;
   max-width: 600px;
   margin: 0 auto 3rem;
+  white-space: nowrap;
 }
 
 
@@ -481,6 +498,12 @@ nav a {
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.service-display.is-switching {
+  opacity: 0;
+  transform: translateY(4px);
 }
 
 .service-img {
@@ -714,9 +737,8 @@ nav a {
 /* --------------------- */
 #contact {
   text-align: center;
-
   position: relative;
-  background-image: url(images/contactBg1.jpeg);
+  background-image: url(images/bg4.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -859,7 +881,10 @@ nav a {
   border: 1px solid var(--border-gray-soft);
   border-radius: 10px;
   padding: 2rem;
-  max-height: 320px;
+  max-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact-info h3 {
@@ -1046,12 +1071,12 @@ nav a {
     padding-inline: 1.25rem;
   }
 
-  .service-display {
-    padding: 1rem;
+  #services {
+    padding-inline: 1.25rem;
   }
 
-  .reviews-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .service-display {
+    padding: 1rem;
   }
 
   .contact-grid {
@@ -1066,6 +1091,10 @@ nav a {
   section {
     padding-block: 8rem;
   }
+
+  #contact {
+    padding-inline: 1.25rem;
+  }
 }
 
 /* Phones */
@@ -1076,10 +1105,6 @@ nav a {
 
   .main-nav {
     padding: 0.75rem 1rem;
-  }
-
-  .sidebar {
-    width: 100%;
   }
 
   .nav-links {
@@ -1098,6 +1123,7 @@ nav a {
   .hero-overlay p {
     font-size: 0.95rem;
     max-width: 22rem;
+    white-space: normal;
   }
 
   section {
@@ -1143,6 +1169,11 @@ nav a {
   .contact-info {
     padding: 1.5rem 1.25rem;
   }
+
+  #services,
+  #contact {
+    padding-inline: 1rem;
+  }
 }
 
 /* Very Small Phones */
@@ -1162,10 +1193,15 @@ nav a {
 
   .hero-overlay p {
     margin-bottom: 1.25rem;
+    justify-content: center;
   }
 
   .gallery-grid {
     column-count: 1;
     padding-inline: 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
   }
 }
