@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DJ Inessa</title>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Monoton&display=swap" rel="stylesheet">
@@ -17,15 +18,27 @@
         <nav class="main-nav">
             <a href="#" class="logo">DJ<span>Inessa</span></a>
 
+            <!-- 1100px and over -->
             <ul class="nav-links">
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#services">Services</a></li>
+                <li class="hideOnMobile"><a href="#reviews">Reviews</a></li>
+                <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
+                <li class="hideOnMobile"><a href="#faq">FAQ</a></li>
+            </ul>
+            
+            <a href="#contact" class="btn">Book Now</a>
+            <a onclick="showSidebar()" href="#" class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="var(--white)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+
+            <!-- 900px and under -->
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="var(--white)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
-
-            <a href="#contact" class="btn">Book Now</a>
         </nav>
     </header>
 
@@ -56,9 +69,9 @@
                         Whether it’s a wedding, corporate event, or private party, I work closely with you to personalize the soundtrack, make your vision a reality and deliver an unforgettable experience.</p>
 
                     <ul class="about-social">
-                        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"></a></li>
-                        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"></a></li>
-                        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504942.png"></a></li>
+                        <li><a href="https://www.instagram.com/inessa.leip/"><img src="icons/instagram-icon.svg"></a></li>
+                        <li><a href="https://www.facebook.com/inessa.leip/"><img src="icons/facebook-icon.svg"></a></li>
+                        <li><a href="#"><img src="icons/tiktok-icon.svg"></a></li>
                     </ul>
                 </div>
             </div>
